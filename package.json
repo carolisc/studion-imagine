@@ -4,8 +4,7 @@
   "description": "",
   "main": "src/index.html",
   "scripts": {
-    "start": "npx live-server src/",
-    "build": "npx run build"
+    "start": "npx live-server src/"
   },
   "author": "",
   "license": "ISC",
