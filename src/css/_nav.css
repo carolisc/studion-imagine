@@ -1,0 +1,209 @@
+.nav {    
+    display: flex;
+    justify-content: space-between;
+    max-width: 115rem;
+    width: 80%;
+    padding: 2rem;
+    position: absolute;
+    left: 50%; /* o elemento começa em 50% da página */
+    transform: translateX(-50%); /* ele volta 50% do espaço, ou seja, centraliza */
+    z-index: 2;
+}
+
+.nav a {
+    text-decoration: none; /* remover sublinhados de links */
+}
+
+.logo {
+    color: var(--text-primary);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.accent {
+    color: var(--color-primary);
+}
+
+.subtitle {
+    display: block;
+    margin-top: -0.5rem;
+    color: var(--text-primary);
+    font-size: 0.4em; /* usa "em" pra relacionar com o elemento pai, pra relacionar com o logo, 40% */
+    font-style: normal;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    transition: color 0.5s linear;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.selected {
+    color: var(--color-primary);
+}
+
+.desktop { /* sinal de maior serve pra todos desse elemento dentro de nav */
+    display: flex;
+    width: 100%;
+    max-width: 70rem;
+    list-style: none; /* remover pontos dos tópicos */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly; /* flex-end: alinhado a direita */
+    /*grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));  minimo espaçamento 100pixels, maximo 1fr, é tipo flex wrap que bota pra continuar embaixo */
+}
+
+.desktop a, .mobile a {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 500px;
+    text-transform: uppercase;
+    transition: color 0.3s linear;
+}
+
+.desktop a:hover, .mobile a:hover {
+    color: var(--color-secondary);
+}
+
+.mobile {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem 2rem;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.mobile a {
+    color: var(--text-primary);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.nav ul > .active {
+    color: var(--color-primary);
+}
+
+.nav__menu-btn {
+    cursor: pointer;
+    font-size: 4rem;
+    width: fit-content;
+    color: #fff;
+    background: none;
+    border: none;
+    display: none;
+    z-index: 3;
+}
+
+/* #menu-toggle {
+    display: none;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 3rem;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: var(--text-primary);
+    position: absolute;
+    height: 0.4rem;
+    width: 3rem;
+    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 0.2rem;
+}
+
+.menu-button::before {
+    content: "";
+    margin-top: -0.8rem;
+}
+
+.menu-button::after {
+    content: "";
+    margin-top: 0.8rem;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0rem;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0rem;
+    transform: rotate(-405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+} */
+
+@media screen and (max-width: 800px) { /* não coloca ; depois do número */
+    .logo {
+        font-size: 3.5rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .nav__menu-btn {
+        display: block;
+    }
+
+    /* #menu-toggle:checked ~ .menu {
+        display: flex;
+        background-color: var(--bg-footer);
+    }
+
+    #menu-toggle ~ .menu {
+        display: none;
+    }
+
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transform: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ .menu li {
+        padding: 5em 0.5em;
+        transform: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ menu a {
+        font-size: 2rem;
+        font-weight: 900jj;
+    } */
+}
+
+@media screen and (max-width: 460px) {
+    header > h2 {
+        font-size: 5rem;
+    }
+}

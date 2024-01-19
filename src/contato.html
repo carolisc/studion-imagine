@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/contato.css">
+    <title>Contato | StudiOn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+<body>
+    <nav class="nav">
+        <a href="./index.html">
+            <h1 class="logo">
+                Studi<span class="accent">on</span> 
+                <span class="subtitle">Eventos</span>
+            </h1>
+        </a>
+        
+        <ul id="menu" class="desktop">
+            <li>
+                <a href="./empresa.html">Empresa</a>
+            </li>
+            <li>
+                <a href="./eventos.html">Eventos</a>
+            </li>
+            <li>
+                <a href="./galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a href="./depoimentos.html">Depoimentos</a>
+            </li>
+            <li>
+                <a href="./contato.html" class="active">Contato</a>
+            </li>
+        </ul>
+
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+
+    <header>
+        <img class="header__background" src="./images/headers/header_contato.jpeg" alt="macbook" >
+        <div class="header_background__mask"></div>
+        <div class="container container__header">
+            <h2>.contato</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>    
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="section1">
+            <section class="section1-left">
+                <div class="section1-left__contact-container">
+                <h4>LIGUE PRA GENTE</h4>
+                <p>
+                    <img class="icon" src="./images/icons/phone.png" alt="telefone">
+                    +55 48 3223-5769
+                </p>
+                <p>
+                    <img class="icon" src="./images/icons/whatsapp.png" alt="whatsapp">
+                    +55 48 99943-7777
+                </p>
+                <h4>VENHA CONHECER NOSSA CASA</h4>
+                <p class="address">
+                    <img class="icon" src="./images/icons/place.png" alt="localização">
+                    Rua Miguel Duax, 129 - Coqueiros, Florianópolis/SC
+                </p></div>
+            </section>
+            <section class="section1-right">
+                <div class="section1-right__form-container">
+                    <h4>DEIXE SUA MENSAGEM</h4>    
+                    <form>
+                        <label for="name">SEU NOME</label>
+                        <input id="name" type="text">
+                        <label for="email">SEU EMAIL</label>
+                        <input id="email" type="text">
+                        <label for="message">SUA MENSAGEM</label>
+                        <textarea id="message"></textarea>
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        
+        <section class="section2">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.511084029156!2d-48.58054392459013!3d-27.60868367623925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273797c599a6f7%3A0x304e15e3136beaf3!2sR.%20Miguel%20Daux%20-%20Coqueiros%2C%20Florian%C3%B3polis%20-%20SC%2C%2088080-220!5e0!3m2!1spt-BR!2sbr!4v1700953048405!5m2!1spt-BR!2sbr" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="map">
+                </iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <h2>
+                    Studi<span class="accent">on</span> 
+                    <span class="subtitle">Eventos</span>
+                </h2>
+            </div>
+            <form id="newsletter-form">
+                <label>Receba News e promoções</label>
+                <input id="email" type="email" placeholder="Email" />
+                <button type="submit">
+                    <img class="icon" src="./images/icons/send2.svg" alt="Enviar">
+                </button>
+            </form>
+            <ul class="socials">
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/youtube.svg" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

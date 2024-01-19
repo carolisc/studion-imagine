@@ -1,0 +1,233 @@
+/* SWIPER */
+
+.slider {
+  position: relative; /* pq queremos que esteja relacionado a section inteira */
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.swiper-pagination-bullet-active {
+  color: #000;
+}
+
+
+
+/* -------------------------------------------------------------- */
+
+
+main {
+    background-color: var(--color-secondary);
+    padding-bottom: 8rem;
+}
+
+/* .slider {
+    width: 100%;
+    height: 100%;
+    min-height: 75vh;
+} */
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.user-image {
+    width: 100%;
+    max-width: 20rem;
+
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--text-secondary);
+    text-align: right;
+}
+
+small {
+    font-size: 3rem;
+    font-weight: 500;
+    display: block;
+}
+
+.quotes {
+    font-size: 5rem;
+    font-weight: 900;
+    max-height: 2rem;
+}
+
+.text {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+    max-width: 70rem;
+    padding: 0 2rem;
+}
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap; /* tonext é um nome qualquer, poderia chamar de proximo */
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: 2; /* só executa animação 2 vezes, tem opção infinite tbm */
+    }
+  
+    /*.carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;  voltar pro primeiro slide quando acaba 
+    } */
+  }
+  
+  /* @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  } pra browsers mais lentos desativar animação*/
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  } /* parar animação com hover */
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: -4rem;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #fff;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 50%;
+    width: 8rem;
+    height: 8rem;
+    transform: translateY(-50%);
+    outline: 0;
+  }
+
+  .carousel::before,
+  .carousel__prev {
+    left: 1rem;
+  } /* prof tirou mas eu tive que deixar */
+  
+  .carousel::after,
+  .carousel__next {
+    right: 1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-size: 5rem 5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    pointer-events: none; /* avisar css que nãp é pra interagir com a imagem e sim com o a (link), pode ser usado pra evitar que cliquem com botão direito do mouse em qualquer coisa */
+  }
+  
+  .carousel::before {
+    background-image: url("../images/icons/arrow-left.png");
+  }
+  
+  .carousel::after {
+    background-image: url("../images/icons/arrow-right.png");
+  }
+
+/* ------------------------------------------ */
+
+  @media screen and (max-width: 800px) { /* não coloca ; depois do número */
+    .user-image {
+      max-width: 16rem;
+    }
+
+    .name {
+      font-size: 4rem;
+    }
+
+    .quotes {
+      font-size: 4rem;
+    }
+
+    .text {
+      font-size: 1.6rem;
+      max-width: 50rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .user-image {
+    max-width: 14rem;
+  }
+
+  .name {
+    font-size: 2.4rem;
+  }
+
+  .name small {
+    font-size: 1rem;
+  }
+
+  .quotes {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+    max-width: 30rem;
+  }    
+
+  .carousel__navigation-button {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .carousel::before,
+  .carousel::after {
+    width: 3rem;
+    height: 3rem;
+  }
+}

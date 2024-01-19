@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../src/css/depoimentos.css">
+    <title>Depoimentos | StudiOn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+<body>
+    <nav class="nav">
+        <a href="./index.html">
+            <h1 class="logo">
+                Studi<span class="accent">on</span> 
+                <span class="subtitle">Eventos</span>
+            </h1>
+        </a>
+        
+        
+        <ul id="menu" class="desktop">
+            <li>
+                <a href="./empresa.html">Empresa</a>
+            </li>
+            <li>
+                <a href="./eventos.html">Eventos</a>
+            </li>
+            <li>
+                <a href="./galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a href="./depoimentos.html" class="active">Depoimentos</a>
+            </li>
+            <li>
+                <a href="./contato.html">Contato</a>
+            </li>
+        </ul>
+
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+
+    <header>
+
+        <img 
+            class="header__background" 
+            src="./images/headers/header_depoimentos.jpeg" 
+            alt="macbook"
+            style="filter: brightness(0.6);" 
+        >
+        <div class="container container__header">
+            <h2 class="testimonials-title">.depoimentos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>    
+        </div>
+        
+    </header>
+
+    <main>
+
+        <section class="container slider">
+
+            <!-- SLIDER SWIPER -->
+
+            <div class="swiper">
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <section class="section">
+                        <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
+                        <h4 class="name">
+                            Alberto Saldanha
+                        </h4>
+                        <small>CEO - vitamusic</small>
+                        <p class="quotes">"</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+                    </section>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <section>
+                        <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
+                        <h4 class="name">
+                            Mariana Bastos
+                        </h4>
+                        <small>Prod de eventos - +Mídia</small>
+                        <p class="quotes">"</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+                    </section>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <section>
+                        <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
+                        <h4 class="name">
+                            Guilherme Silva
+                        </h4>
+                        <small>Gerente de Marketing - comusic</small>
+                        <p class="quotes">"</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+                    </section>
+                  </div>
+        
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+                <script src="./index.js"></script>
+        
+              </div>
+
+            <!-- fim slider swiper -->
+            
+          </section>
+       
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <h2>
+                    Studi<span class="accent">on</span> 
+                    <span class="subtitle">Eventos</span>
+                </h2>
+            </div>
+            <form id="newsletter-form">
+                <label>Receba News e promoções</label>
+                <input id="email" type="email" placeholder="Email" />
+                <button type="submit">
+                    <img class="icon" src="./images/icons/send2.svg" alt="Enviar">
+                </button>
+            </form>
+            <ul class="socials">
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/youtube.svg" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./depoimentos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

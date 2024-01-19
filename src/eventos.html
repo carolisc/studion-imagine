@@ -1,0 +1,168 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/eventos.css">
+    <title>Eventos | StudiOn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+<body>
+    <nav class="nav">
+        <a href="./index.html">
+            <h1 class="logo">
+                Studi<span class="accent">on</span> 
+                <span class="subtitle">Eventos</span>
+            </h1>
+        </a>
+
+        <ul id="menu" class="desktop">
+            <li>
+                <a href="./empresa.html">Empresa</a>
+            </li>
+            <li>
+                <a href="./eventos.html" class="active">Eventos</a>
+            </li>
+            <li>
+                <a href="./galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a href="./depoimentos.html">Depoimentos</a>
+            </li>
+            <li>
+                <a href="./contato.html">Contato</a>
+            </li>
+        </ul>
+
+        <button class="nav__menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+
+    </nav>
+
+    <header>
+        <img 
+            class="header__background" 
+            src="./images/headers/header_eventos.jpeg" 
+            alt="show" 
+        >
+        <div class="container container__header">
+            <h2>.eventos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>    
+        </div>
+        
+    </header>
+
+    <main>
+       <section class="container">
+        <ul class="events">
+            <li class="event">
+                <img class="event__image" src="./images/events/show1.jpeg" alt="ukulele">
+                <div class="event__info">
+                    <h6 class="event__title">Show brazuca</h6>
+                    <p class="event__time">
+                        <img class="icon" src="./images/icons/clock.png" alt="relogio">
+                        12 de setembro às 20h
+                    </p>
+                    <p class="event__description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam
+                    </p>
+                </div>
+                <a class="event__buy-ticket" href="./contato.html">COMPRAR INGRESSO</a>
+            </li>
+
+            <li class="event">
+                <img class="event__image" src="./images/events/show2.jpeg" alt="show2">
+                <div class="event__info">
+                    <h6 class="event__title">Show brazuca</h6>
+                    <p class="event__time">
+                        <img class="icon" src="./images/icons/clock.png" alt="relogio">
+                        12 de setembro às 20h
+                    </p>
+                    <p class="event__description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam
+                    </p>
+                </div>
+                <a class="event__buy-ticket" href="./contato.html">COMPRAR INGRESSO</a>
+            </li>
+
+            <li class="event">
+                <img class="event__image" src="./images/events/show3.jpeg" alt="show3">
+                <div class="event__info">
+                    <h6 class="event__title">Show brazuca</h6>
+                    <p class="event__time">
+                        <img class="icon" src="./images/icons/clock.png" alt="relogio">
+                        12 de setembro às 20h
+                    </p>
+                    <p class="event__description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam
+                    </p>
+                </div>
+                <a class="event__buy-ticket" href="./contato.html">COMPRAR INGRESSO</a>
+            </li>
+
+            <li class="event">
+                <img class="event__image" src="./images/events/show4.jpeg" alt="show4">
+                <div class="event__info">
+                    <h6 class="event__title">Show brazuca</h6>
+                    <p class="event__time">
+                        <img class="icon" src="./images/icons/clock.png" alt="relogio">
+                        12 de setembro às 20h
+                    </p>
+                    <p class="event__description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam
+                    </p>
+                </div>
+                <a class="event__buy-ticket" href="./contato.html">COMPRAR INGRESSO</a>
+            </li>
+        </ul>
+       </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <h2>
+                    Studi<span class="accent">on</span> 
+                    <span class="subtitle">Eventos</span>
+                </h2>
+            </div>
+            <form id="newsletter-form">
+                <label>Receba News e promoções</label>
+                <input id="email" type="email" placeholder="Email" />
+                <button type="submit">
+                    <img class="icon" src="./images/icons/send2.svg" alt="Enviar">
+                </button>
+            </form>
+            <ul class="socials">
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./images/icons/youtube.svg" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

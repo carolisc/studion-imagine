@@ -1,0 +1,21 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-secondary);
+    transition: linear;
+    box-sizing: border-box; /* pra padding sempre ficar interno */
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 115rem;
+    width: 100%;
+    margin: 0 auto; /* pra delimitar e deixar bordas iguais em tudo, mas tirei container do header e da section2 pq tava pegando a imagem e cor de fundo que tem que ficar na tela lateral toda */
+    padding: 0 2rem;
+}

@@ -1,0 +1,132 @@
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.event {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.event__image {
+    max-width: 18rem;
+    min-height: 18rem;
+}
+
+.event__info {
+    max-width: 57rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinhar a esquerda */
+    justify-content: center;
+    gap: 2rem;
+}
+
+.event__title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.event__time {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.event__time .icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.event__description {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.event__buy-ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 22rem;
+    height: 6rem;
+    border-radius: 8rem;
+
+    background-color: var(--color-secondary);
+    color: var(--text-primary);
+
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.event__buy-ticket:hover {
+    background-color: var(--text-primary);
+    color: var(--color-secondary);
+
+    box-shadow: 0.1rem 0.5rem 1rem #333;
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 800px) { /* não coloca ; depois do número */
+    .event__image {
+        max-width: 14rem;
+        min-height: 14rem;
+    }
+
+    .event__title {
+        font-size: 1.4rem;
+
+    }
+
+    .event__time {
+        font-size: 1.2rem;
+    }
+    
+    .event__time .icon {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    
+    .event__description {
+        font-size: 1rem;
+    }
+
+    .event__buy-ticket {
+        width: 12rem;
+        height: 4rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .event {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 35rem;
+        text-align: center;
+    }
+
+    .event__image {
+        max-width: 14rem;
+        min-height: 14rem;
+    }
+
+    .event__title {
+        font-size: 1.4rem;
+
+    }
+
+    .event__info {
+        align-items: center;
+    }
+  
+}
