@@ -1,3 +1,1 @@
-READ.ME
-
-Visit the published website: https://studion-imagine.vercel.app/
+Visit the published website here: https://studion-imagine.vercel.app/
