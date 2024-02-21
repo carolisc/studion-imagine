@@ -6,7 +6,7 @@ Studion - Event Organization Company Website Template is a front-end template de
 
 ### Visit the Published Website
 
-To see a live example of the Studion Imagine Event Organization Website Template, visit [[https://example.com](https://studion-imagine.vercel.app/index.html)](https://studion-imagine.vercel.app/).
+To see a live example of the Studion Imagine Event Organization Website Template, visit [(https://studion-imagine.vercel.app/index.html)](https://studion-imagine.vercel.app/).
 
 ![image](https://github.com/carolisc/studion-imagine/assets/89231697/3ea14545-ad58-4ee8-9514-4f5ad40331ce)
 
